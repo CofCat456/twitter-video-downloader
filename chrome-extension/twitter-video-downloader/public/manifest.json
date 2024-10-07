@@ -7,7 +7,7 @@
 		"service_worker": "background.js"
 	},
 	"permissions": ["storage", "activeTab", "scripting", "cookies"],
-	"host_permissions": ["*://*.twitter.com/*", "*://twitter.com/*"],
+	"host_permissions": ["*://*.x.com/*", "*://x.com/*"],
 	"action": {
 		"default_popup": "popup.html",
 		"default_title": "Twitter Video Downloader: Click while on a Twitter post to download its video",

@@ -1,7 +1,6 @@
 import {h, render} from 'preact';
 import { StateUpdater, useEffect, useState } from 'preact/hooks';
 import {VideoItem, Message, ReceiveTwitterVideosPayload, ReceiveErrorMessagePayload, ReceiveInfoMessagePayload, RequestTwitterVideosPayload, CompleteTwitterEnvironmentSetupPayload} from '../abi';
-import { TabNotFoundError } from '../errors';
 import './popup.css';
 
 render((<App/>), document.getElementById('root'));
@@ -26,7 +25,7 @@ function App(props: any) {
 			{errorMessage != null && (
 				<div>
 					<p><strong>Error</strong>: {errorMessage}</p>
-					<p>To report this error so it gets fixed as quickly as possible, DM <a href="https://twitter.com/zelcon" target="_blank">@zelcon on Twitter</a> and copy paste the error you see above.</p>
+					<p>To report this error so it gets fixed as quickly as possible, DM <a href="https://x.com/zelcon" target="_blank">@zelcon on Twitter</a> and copy paste the error you see above.</p>
 				</div>
 			)}
 			<div>
